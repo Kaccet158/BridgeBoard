@@ -1,2 +1,6 @@
-# Tip-Cloud-CLI
-Is tool to share your clipboard easily beetwen various devices using Nextcloud services instead of local wi-fi like KDE Connect. 
+# Tip Cloud 
+Tip Cloud is productivicty service which helps maitain consistenst performance while working across various apps, programs and devices maitaing privacy. 
+
+Note: 
+Tip Cloud is currently in early-stage development. Core logic is implemented; UI and production-ready scaling are in progress. Target V1 Launch: May 2026.
+
