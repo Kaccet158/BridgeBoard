@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 # Create home/user/.tip-cloud file
-CONFIG_DIR = Path.home() / ".tip-cloud"
+CONFIG_DIR = Path.home() / ".bridgeboard"
 CONFIG_FILE = CONFIG_DIR / "config.json"
 
 # Cheks if config file exists, if not creates one
