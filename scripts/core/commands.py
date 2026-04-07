@@ -1,7 +1,12 @@
 import os
 import subprocess
 import pyperclip
+from pathlib import Path
 from .config import update_config
+from .client import ClientCloud
+
+CONFIG_DIR = Path.home() / ".bridgeboard"
+CONFIG_FILE = CONFIG_DIR / "config.json"
 
 # Login configuration command
 def cmd_init_setup():
@@ -10,7 +15,7 @@ def cmd_init_setup():
     # Gathering data
     new_data = {
         "webdav_hostname":  input("Enter server link (Recommended Nexctould based tools): "),
-        "webdav_logi":      input("Enter login: "),
+        "webdav_login":      input("Enter login: "),
         "webdav_password":  input("Enter password: ")
     }
 
@@ -23,8 +28,8 @@ def notify(title, message):
     # Native macOS notifications (no extra packages needed)
     os.system(f"osascript -e 'display notification \"{message}\" with title \"{title}\"'")
 
-def cmd_login():
-    ensure_config()
+def cmd_login_dev():
+    # update_config()
     editor = os.environ.get('EDITOR', 'nano')
     print(f"Opening config file in {editor}...")
     subprocess.call([editor, str(CONFIG_FILE)])
@@ -36,7 +41,7 @@ def cmd_send():
         return
 
     print("Sending clipboard to cloud...")
-    cloud = CloudClient()
+    cloud = ClientCloud()
     if cloud.upload(text):
         print("Success: Clipboard sent.")
         notify("CloudBridge", "Clipboard sent to the cloud.")
@@ -45,7 +50,7 @@ def cmd_send():
 
 def cmd_get():
     print("Fetching clipboard from cloud...")
-    cloud = CloudClient()
+    cloud = ClientCloud()
     text = cloud.download()
     
     if text:
