@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import argparse
 import sys
-from scripts.core.commands import cmd_login_dev, cmd_send, cmd_get, cmd_init_setup
+from .commands import cmd_login_dev, cmd_send, cmd_get, cmd_init_setup
 
 def main():
     parser = argparse.ArgumentParser(description="CloudBridge CLI")
@@ -11,7 +11,7 @@ def main():
     subparsers.add_parser("send", help="Send current clipboard to cloud")
     subparsers.add_parser("get", help="Get clipboard from cloud")
 
-    args = parser.parse_args()
+    args = parser.parADMEse_args()
 
     if args.command == "login":
         cmd_init_setup()
