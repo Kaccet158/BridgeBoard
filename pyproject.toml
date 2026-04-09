@@ -11,5 +11,8 @@ dependencies = [
     "plyer"
 ]
 
+[tool.setuptools.packages.find]
+where = ["source"]
+
 [project.scripts]
 bb = "bridgeboard.main:main"

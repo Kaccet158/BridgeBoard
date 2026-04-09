@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+bridgeboard.egg-info/PKG-INFO
+bridgeboard.egg-info/SOURCES.txt
+bridgeboard.egg-info/dependency_links.txt
+bridgeboard.egg-info/entry_points.txt
+bridgeboard.egg-info/requires.txt
+bridgeboard.egg-info/top_level.txt
+source/bridgeboard/__init__.py
+source/bridgeboard/client.py
+source/bridgeboard/commands.py
+source/bridgeboard/config.py
+source/bridgeboard/main.py

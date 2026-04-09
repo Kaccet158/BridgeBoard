@@ -11,7 +11,7 @@ def main():
     subparsers.add_parser("send", help="Send current clipboard to cloud")
     subparsers.add_parser("get", help="Get clipboard from cloud")
 
-    args = parser.parADMEse_args()
+    args = parser.parse_args()
 
     if args.command == "login":
         cmd_init_setup()

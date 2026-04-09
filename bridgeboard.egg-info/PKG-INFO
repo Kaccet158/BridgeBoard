@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: bridgeboard
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: pyperclip
+Requires-Dist: webdavclient3
+Requires-Dist: plyer
+Dynamic: license-file

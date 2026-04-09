@@ -26,8 +26,8 @@ class ClientCloud:
             if os.path.exists(tmp_file):
                 os.remove(tmp_file)
 
-# NOTE 
-def download(self):
+    # NOTE 
+    def download(self):
         tmp_file = "tmp_down.txt"
         try:
             self.client.download_sync(remote_path=self.remote_path, local_path=tmp_file)
