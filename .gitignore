@@ -5,10 +5,13 @@ local_clipboard.txt
 temp_cliboard.txt
 .vscode
 settings.json
+/bridgeboard.egg-info
+/source//bridgeboard.egg-info
 
 #Python
 .venv
 /venv
+/source/bridgeboard/__pycache__
 
 /temp
 #Binaries
@@ -55,3 +58,5 @@ settings.json
 
 # debug information files
 *.dwo
+
+/scripts/core/__pycache__

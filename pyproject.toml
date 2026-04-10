@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bridgeboard"
+version = "0.1.0"
+dependencies = [
+    "pyperclip",
+    "webdavclient3",
+    "plyer"
+]
+
+[tool.setuptools.packages.find]
+where = ["source"]
+
+[project.scripts]
+bb = "bridgeboard.main:main"
