@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Tip Cloud 
 Tip Cloud is productivicty service which helps maitain consistenst performance while working across various apps, programs and devices maitaing privacy. 
 
