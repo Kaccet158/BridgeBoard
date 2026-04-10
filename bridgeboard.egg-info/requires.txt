@@ -1,0 +1,3 @@
+pyperclip
+webdavclient3
+plyer
