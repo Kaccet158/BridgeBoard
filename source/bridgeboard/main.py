@@ -15,7 +15,7 @@ def main():
 
     if args.command == "login":
         cmd_init_setup()
-    elif args.command == "login dev":
+    elif args.command == "config":
         cmd_login_dev()
     elif args.command == "send":
         cmd_send()
